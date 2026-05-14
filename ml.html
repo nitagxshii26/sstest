@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub | What is ML?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <nav>
+        <a href="index.html" class="logo">AI_Hub</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ai.html">What is AI?</a>
+            <a href="ml.html" class="active">What is ML?</a>
+            <a href="quiz.html">Quiz</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☀️</button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Machine Learning (ML)</h1>
+        
+        <section class="card">
+            <h2>The Engine of Modern AI</h2>
+            <p><strong>Machine Learning (ML)</strong> is a subset of artificial intelligence. It focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy over time.</p>
+            <p>If AI is the broad concept of machines being able to carry out tasks in a way that we would consider "smart," Machine Learning is a current application of AI based around the idea that we should just be able to give machines access to data and let them learn for themselves.</p>
+        </section>
+
+        <section class="card">
+            <h2>Why is it Needed?</h2>
+            <p>Imagine trying to write a program to identify a dog in a photo. Writing rules like "if it has four legs, fur, and ears" is impossible because a cat also has those features. A dog in a photo might be partially hidden, facing away, or a bizarre breed.</p>
+            <p>ML solves this by removing the need for explicit programming. Instead of giving the computer rules, we give it thousands of pictures of dogs and say, "These are dogs." The algorithm figures out the statistical patterns that define a dog on its own.</p>
+        </section>
+
+        <section class="card">
+            <h2>Types of Machine Learning</h2>
+            <div class="grid" style="grid-template-columns: 1fr;">
+                <div>
+                    <h3>1. Supervised Learning</h3>
+                    <p>The algorithm is trained on a labeled dataset. This means the data comes with the "answers." (e.g., teaching an algorithm to recognize spam emails by showing it thousands of emails explicitly labeled as "spam" or "not spam").</p>
+                </div>
+                <div>
+                    <h3>2. Unsupervised Learning</h3>
+                    <p>The algorithm analyzes unlabeled data to find hidden patterns or structures. (e.g., grouping customers into different segments based on purchasing behavior without prior labels).</p>
+                </div>
+                <div>
+                    <h3>3. Reinforcement Learning</h3>
+                    <p>The algorithm learns by interacting with an environment and receiving rewards or penalties. This is how algorithms learn to play chess, video games, or how robots learn to walk.</p>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: right; margin-top: 2rem;">
+            <a href="quiz.html" class="btn">Test Your Knowledge &rarr;</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Hub Educational Platform. Built for the next generation of innovators.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

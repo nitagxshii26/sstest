@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub | Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <nav>
+        <a href="index.html" class="logo">AI_Hub</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ai.html">What is AI?</a>
+            <a href="ml.html">What is ML?</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☀️</button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Knowledge Check</h1>
+        <p>Let's see how much you've learned about AI and Machine Learning.</p>
+        
+        <div id="quiz-container" class="card">
+            <div id="question-block">
+                <h2 id="question-title" style="border: none; margin-bottom: 0;">Question Title</h2>
+                <div id="options" class="quiz-options">
+                    <!-- Options injected by JS -->
+                </div>
+                <button id="next-btn" class="btn hidden" style="margin-top: 1.5rem;">Next Question</button>
+            </div>
+            
+            <div id="quiz-result" class="hidden">
+                <h2>Quiz Complete!</h2>
+                <div class="score-display" id="score-display">0/0</div>
+                <p id="score-message">Good job!</p>
+                <button id="restart-quiz" class="btn" style="margin-top: 1.5rem;">Retake Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Hub Educational Platform. Built for the next generation of innovators.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
