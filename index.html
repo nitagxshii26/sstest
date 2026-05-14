@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML for Kids!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="mascot">🤖</div>
+        <h1>Welcome to the Magic of AI!</h1>
+        <p>Let's learn how computers think and learn.</p>
+    </header>
+
+    <main>
+        <section class="card bg-blue">
+            <h2>What is AI?</h2>
+            <p><strong>AI</strong> stands for <strong>Artificial Intelligence</strong>.</p>
+            <p>Imagine if your toys could play with you all by themselves! AI is like giving a computer a super smart brain so it can do fun things, like talking to you, playing games, or even drawing pictures.</p>
+            <div class="emoji-row">🧠 ✨ 🎮</div>
+        </section>
+
+        <section class="card bg-yellow">
+            <h2>What is Machine Learning?</h2>
+            <p><strong>Machine Learning (ML)</strong> is how we teach the AI.</p>
+            <p>Just like you learn to ride a bike by practicing, a computer learns by looking at lots of examples! If we show it 100 pictures of cats, it learns what a cat looks like!</p>
+            <div class="emoji-row">🐈 🐕 🚲</div>
+        </section>
+
+        <section class="card bg-pink interactive-section">
+            <h2>Let's Train a Robot! 🛠️</h2>
+            <p>Our robot friend needs to learn what an <strong>Apple</strong> 🍎 looks like. Click on all the apples to teach it!</p>
+            
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="progress-text">0 / 5 Apples Found</p>
+
+            <div id="game-board" class="game-board">
+                <!-- Items will be generated here by JS -->
+            </div>
+
+            <div id="success-message" class="hidden">
+                <h3>Hooray! 🎉</h3>
+                <p>The robot now knows what an apple is! You are a great teacher!</p>
+                <button id="restart-btn" class="btn">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for little learners!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
