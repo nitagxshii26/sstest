@@ -89,6 +89,15 @@ function selectOption(selectedIndex, btnElement) {
     if (selectedIndex === q.answer) {
         btnElement.classList.add('correct');
         score++;
+        
+        // Trigger confetti pop
+        if (typeof confetti === 'function') {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
     } else {
         btnElement.classList.add('incorrect');
         options[q.answer].classList.add('correct'); // Show the right answer
