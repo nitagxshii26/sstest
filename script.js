@@ -100,6 +100,7 @@ function selectOption(selectedIndex, btnElement) {
         }
     } else {
         btnElement.classList.add('incorrect');
+        btnElement.textContent += ' 😢 BOOO!';
         options[q.answer].classList.add('correct'); // Show the right answer
     }
 
